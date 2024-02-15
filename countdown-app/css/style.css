@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/trang-nguyen-drke6MEs8Gg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 50%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading>h1{
+    color: white;
+    font-size: 5rem;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.timer>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.timer>ul>li>input{
+    width: 14rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    color: black;
+}
+.timer>ul>li{
+    text-decoration: none;
+    list-style: none;
+}
+.timer>ul>li>label{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.timer>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
