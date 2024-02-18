@@ -37,7 +37,8 @@ function generatePassword (password = "") {
     if(password.length < lengthinput.value) {
         return generatePassword(password);
     }
-   passbox.innerText = truncateString(password, lengthinput.value);
+    console.log(truncateString(password, lengthinput.value))
+//    passbox.innerText = truncateString(password, lengthinput.value);
 
 }
 generatePassword()
