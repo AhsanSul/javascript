@@ -6,9 +6,7 @@
 .main{
     width: 100vw;
     height: 100vh;
-    background-image: url(../images/pexels-bill-white-165537.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: rgb(193, 9, 9);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -21,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background: rgba(244, 245, 245, 0.343);
+    background: rgba(0, 0, 0, 0.343);
     padding: 10px;
     border-radius: 20px;
 }
@@ -32,7 +30,8 @@
     align-items: center;
     font-size: 2rem;
     margin-bottom: 10px;
-    font-weight: 900;
+    font-weight: 700;
+    color: white;
 }
 
 .length{
@@ -40,7 +39,8 @@
     justify-content: space-between;
     width: 30rem;
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 700;
+    color: white;
 }
 .length>input{
     width: 6rem;
@@ -57,4 +57,12 @@
     color: white;
     font-size: 1rem;
     cursor: pointer;
+}
+
+#password-feild{
+    font-size: 2rem;
+    padding: 10px;
+}
+#pass-length{
+    font-size: 1.5rem;
 }
