@@ -8,13 +8,16 @@
     width: 30rem;
     height: 30rem;
     box-shadow: 0 0 5px 5px #8a8888;
+    padding: 1rem;
+    margin: auto;
+}
+.form>form{
     display: flex;
     flex-direction: column;
     margin: auto;
     gap: 10px;
-    padding: 1rem;
 }
-.form>input{
+.form>form>input{
     height: 3rem;
 }
 #sbtn{
