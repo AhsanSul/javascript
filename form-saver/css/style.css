@@ -31,7 +31,7 @@
     cursor: pointer;
 }
 
-.main{
+#main{
     width: 20rem;
     box-shadow: 0 0 5px 5px #8a8888;
     display: flex;
@@ -41,7 +41,7 @@
     padding: 2rem;
     position: relative;
 }
-.main>span{
+#main>span{
     position: absolute;
     top: 10px;
     right: 10px;
