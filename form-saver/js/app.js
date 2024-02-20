@@ -10,10 +10,9 @@ function getData (e) {
     let name = e.target.name.value;
     let email = e.target.email.value;
     let number = e.target.number.value;
-    console.log(name, email, number)
     
 
-
+   var userdetail = localStorage.getItem('name', JSON.stringify("userdata"));
 }
 
 getData();
