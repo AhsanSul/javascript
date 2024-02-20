@@ -1,6 +1,7 @@
 //selectors
 const form = document.querySelector(".form");
 let main = document.getElementById('main');
+const removeall = document.getElementById('removeall').addEventListener('click', removeAll);
 
 
 
@@ -28,7 +29,6 @@ function getData (e) {
         'number' : number
 
     });
-    console.log(datauser)
     
    var userdetail = localStorage.setItem('userdata', JSON.stringify(datauser));
    e.target.reset();
@@ -60,7 +60,6 @@ function showdata () {
         
     });
     
-    console.log(finalData)
 
 }
 
@@ -69,6 +68,13 @@ let removedata=(index)=> {
     datauser.splice(index,1)
     var userdetail = localStorage.setItem('userdata', JSON.stringify(datauser));
 }
+//remove all  function
+
+function removeAll (){
+    // datauser = JSON.parse(localStorage.getItem("userdata")) ?? [];
+
+    localStorage.clear("userdata");
+    showdata();
+}
 
 showdata();
-
