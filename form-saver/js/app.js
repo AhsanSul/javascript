@@ -47,7 +47,7 @@ function showdata () {
 
         finalData += `
         <div class="item">
-        <span onclick= "removedata">X</span>
+        <span onclick= "removedata(${i})">X</span>
         <h2>Name</h2>
         <div>${element.name}</div>
         <h2>E-mail</h2>
@@ -61,14 +61,18 @@ function showdata () {
     });
     
 
-}
+}showdata();
 
 let removedata=(index)=> {
     datauser = JSON.parse(localStorage.getItem("userdata")) ?? [];
     datauser.splice(index,1)
     var userdetail = localStorage.setItem('userdata', JSON.stringify(datauser));
+    showdata();
+   
 }
-//remove all  function
+
+
+//remove all  (function)
 
 function removeAll (){
     // datauser = JSON.parse(localStorage.getItem("userdata")) ?? [];
