@@ -3,6 +3,7 @@ const form = document.querySelector(".form");
 let main = document.getElementById('main');
 
 
+
 form.addEventListener('submit', getData)
 
 function getData (e) {
@@ -30,6 +31,7 @@ function getData (e) {
     console.log(datauser)
     
    var userdetail = localStorage.setItem('userdata', JSON.stringify(datauser));
+   e.target.reset();
    showdata();
    
 }
@@ -45,7 +47,7 @@ function showdata () {
 
         finalData += `
         <div class="item">
-        <span>X</span>
+        <span onclick= "removedata">X</span>
         <h2>Name</h2>
         <div>${element.name}</div>
         <h2>E-mail</h2>
@@ -61,5 +63,12 @@ function showdata () {
     console.log(finalData)
 
 }
+
+let removedata=(index)=> {
+    datauser = JSON.parse(localStorage.getItem("userdata")) ?? [];
+    datauser.splice(index,1)
+    var userdetail = localStorage.setItem('userdata', JSON.stringify(datauser));
+}
+
 showdata();
 
