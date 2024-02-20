@@ -11,8 +11,15 @@ function getData (e) {
     let email = e.target.email.value;
     let number = e.target.number.value;
     
+    let userdata = [
 
-   var userdetail = localStorage.getItem('name', JSON.stringify("userdata"));
+        'name' = name,
+        'email' = email,
+        'number' = number
+
+    ];
+
+   var userdetail = localStorage.setItem('dataAll', JSON.stringify(userdata));
 }
 
 getData();
