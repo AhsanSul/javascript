@@ -22,21 +22,31 @@ function getRandomNumber (dataset) {
 
 function generatePassword (password = "") {
 
-    if(upperinput.checked) {
-        password+= getRandomNumber(uppercase)
+    switch (true) {
+        case upperinput.checked:
+            password+= getRandomNumber(uppercase);
+        case lowerinput.checked:
+            password+= getRandomNumber(lowercase);
+        case numberinput.checked:
+            password+= getRandomNumber(numbers);
+        case symbolinput.checked:
+            password+= getRandomNumber(symbols);
     }
-    if(lowerinput.checked){
-        password+= getRandomNumber(lowercase)
-    }
-    if(numberinput.checked){
-        password+= getRandomNumber(numbers)
-    }
-    if(symbolinput.checked){
-        password+= getRandomNumber(symbols)
-    }
-    if(password.length < lengthinput.value) {
-        return generatePassword(password);
-    }
+
+    // if(upperinput.checked) {
+    //     password+= getRandomNumber(uppercase)
+    // }
+    //  if(lowerinput.checked){
+    //     password+= getRandomNumber(lowercase)
+    // }
+    //  if(numberinput.checked){
+    //     password+= getRandomNumber(numbers)
+    // }
+    //  if(symbolinput.checked){
+    //     password+= getRandomNumber(symbols)
+    // }
+    //  generatePassword(password);
+    
     console.log(truncateString(password, lengthinput.value))
 //    passbox.innerText = truncateString(password, lengthinput.value);
 
@@ -58,3 +68,6 @@ document.getElementById('btn').addEventListener(
           return str;
         }
       }
+
+
+     

@@ -4,6 +4,7 @@ const iseconds = document.getElementById('seconds');
 const iminutes = document.getElementById('minutes');
 const ihours = document.getElementById('hours');
 const idays = document.getElementById('days');
+const Dtimer = document.getElementById('timer');
 
 
 
@@ -15,6 +16,7 @@ function clock(){
     console.log(diff)
     //converting miliseconds to seconds
     const seconds = diff / 1000;
+    iseconds.value = seconds
     console.log(seconds)
     //converting seconds to minutes
     const minutes = seconds / 60;
@@ -28,3 +30,12 @@ function clock(){
     
 }
 clock();
+
+
+function displayTime (){
+
+Dtimer.innerHTML = `
+`
+
+
+}
