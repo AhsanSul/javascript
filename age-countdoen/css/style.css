@@ -5,9 +5,74 @@
 }
 
 .main{
-    background: url(../images/mountain.jpg);
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/mountain.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vh;
-    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 2rem;
+    height: 4rem;
+}
+#toogle>input{
+    width: 8rem;
+    height: 3rem;
+}
+#toogle>button{
+    width: 8rem;
+    height: 3rem;
+    background: greenyellow;
+    color: rgb(83, 81, 81);
+}
+
+.setting>img{
+    width: 4rem;
+    filter: invert();
+}
+
+.center>ul{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.center>h1{
+    font-size: 6rem;
+}
+
+.center>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center>ul>li>h2{
+    color: black;
+    font-size: 4rem;
+}
+.holder{
+    color: white;
+    font-size: 5rem;
+}
+
+.hidden{
+    display: none;
 }

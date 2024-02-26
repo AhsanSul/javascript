@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>age-count</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -13,18 +13,20 @@
             <h1>Kindly Enter Your Date of Birth</h1>
 
             <ul>
-                <li><div class="holder"></div><h2>Years</h2></li>
-                <li><div class="holder"></div><h2>Months</h2></li>
-                <li><div class="holder"></div><h2>Days</h2></li>
-                <li><div class="holder"></div><h2>hours</h2></li>
-                <li><div class="holder"></div><h2>Minutes</h2></li>
-                <li><div class="holder"></div><h2>Seconds</h2></li>
+                <li><div class="holder" id="years">-</div><h2>Years</h2></li>
+                <li><div class="holder" id="months">-</div><h2>Months</h2></li>
+                <li><div class="holder" id="days">-</div><h2>Days</h2></li>
+                <li><div class="holder" id="hours">-</div><h2>hours</h2></li>
+                <li><div class="holder" id="minutes">-</div><h2>Minutes</h2></li>
+                <li><div class="holder" id="seconds">-</div><h2>Seconds</h2></li>
             </ul>
         </div>
-        <div class="setting">
-            <img src="" alt="">
+        <div class="setting" id="icon">
+            <img src="./images/download-removebg-preview (24).png" alt="">
+           <div id="toogle">
             <input type="date" name="date" id="dateofbirth">
-            <button>Add DOB</button>
+            <button id="btn">Add DOB</button>
+            </div> 
         </div>
     </div>
     
